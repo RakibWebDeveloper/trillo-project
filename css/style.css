@@ -56,6 +56,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    font-size: 1.6rem;
     color: var(--color-grey-dark-2);
     background-image: linear-gradient(to right bottom, 
         var(--color-primary-light), 
@@ -100,7 +101,7 @@ body {
 .header {
     height: 7rem;
     background-color: #ffff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: 1px solid var(--color-grey-light-2);
 
     display: flex;
     justify-content: space-between;
@@ -311,4 +312,107 @@ body {
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+}
+
+/* /////Gallery  */
+.gallery {
+    display: flex;
+}
+.gallery .gallery-photo {
+    width: 100%;
+    display: block;
+}
+/* //////////////////////////// */
+/* Overview */
+
+.overview {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid var(--color-grey-light-2);
+}
+.overview-heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+}
+
+.overview-stars {
+    margin-right: auto;
+    display: flex;
+}
+
+.overview-icon-star, .overview-icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+}
+.overview-location {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+
+}
+.overview-icon-location {
+    margin-right: .3rem;
+}
+
+.overview-rating {
+    background-color: var(--color-primary);
+    color: #ffff;
+    margin-left: 3rem;
+    align-self: stretch;
+
+    padding: 0 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overview-rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+.overview-rating-count {
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.btn-inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentcolor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn-inline:hover {
+    color: var(--color-grey-dark-1);
+}
+.btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
 }
