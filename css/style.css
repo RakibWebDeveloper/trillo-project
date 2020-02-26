@@ -78,6 +78,7 @@ body {
 
 .content {
     display: flex;
+    min-height: 130vh;
     
 }
 .sidebar {
@@ -584,3 +585,52 @@ body {
     font-family: sans-serif;
     z-index: 1;
 }
+
+/* ////////////// */
+
+/* cta */
+/* ////////////// */
+
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.cta-book-now {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    color: white;
+    position: relative;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-visible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+}
+
+/* .btn-invisible {
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 0rem;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -100%;
+} */
+
+
+
